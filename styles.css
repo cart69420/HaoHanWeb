@@ -69,7 +69,6 @@ body {
     height: 100%;
     font-size: 0.85rem;
     font-style: bold;
-    font-family: "M-Plus-1";
 }
 
 .navbar__links:hover {
@@ -291,9 +290,13 @@ body {
 
 .copyright {
     position: absolute;
-    bottom: -10%;
+    bottom: -30%;
     left: 50%;
     text-align: center;
     color: #fff;
     transform: translate(-50%, -50%);
+}   
+
+ul li:hover {
+    text-decoration: underline;
 }
