@@ -56,9 +56,9 @@
         <img src="img/bg4.png" alt="background" class="background-img img_setting">
 
         <div class="body_center" style="position: absolute;">
-            <h1 class="heading content">Hao Han SMP</h1>
+            <h1 class="heading content" id="destypewrite"></h1>
             <br>
-            <p class="des1">Một server <b>Roleplay, Sinh Tồn</b> dành cho mọi người </p>
+            <p class="des1">Một server <b>Roleplay</b>, <b>Sinh Tồn</b> dành cho mọi người</p>
             <br>
             <p class="des2">Server <b>Hảo Hán SMP</b> là server vanilla chạy cả 2 nên tảng <b>Java và Bedrock tạo ra bởi Ginn</b></p>
             <p class="des3">Hiện đang chạy ở phiên bản <b>Java 1.16.5</b> | <b>Bedrock 1.17.x</b></p>
@@ -95,9 +95,27 @@
                 </div>
         </div>
     </div>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script> src="app.js"</script>
+    <script>
+        new $("#destypewrite").typeIt({
+            strings: [
+                "<b>Hảo Hán SMP</b>",
+                "<b style='font-size: 48px'>Sinh tồn ― Khám phá</b>",
+                "<b style='font-size: 48px'>Vui chơi ― Roleplay</b>",
+            ],
+            speed: 150,
+            breakLines: false,
+            autoStart: false,
+            loop: true,
+            startDelay: 250,
+            loopDelay: 750,
+            startDelete: false,
+        })
+    </script>
 </body>  
 <footer>
     <span class="copyright">HaoHan SMP ©️ 2021</span>
